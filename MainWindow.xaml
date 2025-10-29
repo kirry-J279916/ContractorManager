@@ -13,15 +13,14 @@
         <TextBox x:Name="LastNameTextBox" Text="Last name" HorizontalAlignment="Left" Margin="11,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
         <TextBox x:Name="HourlyWageTextBox" Text="Hourly wage" HorizontalAlignment="Left" Margin="11,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
 
-        <Button x:Name="AddContractorButton" Content="Add" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
-        <Button x:Name="RemoveContractorButton" Content="Remove" HorizontalAlignment="Left" Margin="125,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
+        <Button x:Name="AddContractorButton" Content="Add" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" Click="AddContractorButton_Click" />
+        <Button x:Name="RemoveContractorButton" Content="Remove" HorizontalAlignment="Left" Margin="11,217,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
 
-        <TextBox x:Name="SearchContractorTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="30" FontSize="25" Margin="10,254,0,0" />
-        <Button x:Name="SearchContractorButton" Content="Search Contractor" HorizontalAlignment="Left" Margin="229,254,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="166" />
+        <Button x:Name="SearchContractorButton" Content="Search" HorizontalAlignment="Left" Margin="125,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
 
-        <ListBox x:Name="ContractorsListBox" Margin="10,289,405,10" FontSize="20" />
+        <ListBox x:Name="ContractorsListBox" Margin="10,289,405,10" FontSize="15" />
 
 
-        
+
     </Grid>
 </Window>

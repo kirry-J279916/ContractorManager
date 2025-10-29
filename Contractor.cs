@@ -23,5 +23,12 @@ namespace ContractorManager
             StartDate = startDate;
             HourlyWage = hourlyWage;
         }
+
+
+        // -- Show as readable text
+        public override string ToString()
+        {
+            return $"[{FirstName} {LastName}] \nWage p.a: ${HourlyWage} \nHired: {StartDate}";
+        }
     }
 }
