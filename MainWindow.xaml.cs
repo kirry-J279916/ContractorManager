@@ -20,5 +20,10 @@ namespace ContractorManager
         {
             InitializeComponent();
         }
+
+        private void FirstNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            FirstNameTextBox.Focus();
+        }
     }
 }
