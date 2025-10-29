@@ -22,11 +22,36 @@ namespace ContractorManager
         }
 
 
-        // -- Methods
-        public List<Contractor> AddContractor(Contractor contractor)
+
+        // -- Method to add a Contractor to the Contractors list.
+        public void AddContractor(Contractor contractor)
         {
             Contractors.Add(contractor);
-            return Contractors;
         }
+
+        // -- Method to remove a Contractor from the Contractors list.
+        public void RemoveContractor(Contractor contractor)
+        {
+            Contractors.Remove(contractor);
+        }
+
+
+
+        // -- Method to add a Job to the Job list.
+        public void AddJob(Job job)
+        {
+            Jobs.Add(job);
+        }
+
+
+
+        // -- Method to assign Contractor to Job.
+        public void AssignJob(Contractor contractor, Job job)
+        {
+            job.ContractorAssigned = contractor;
+        }
+
+
+
     }
 }

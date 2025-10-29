@@ -7,20 +7,38 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <!-- Manage Contractors -->
         <Label Content="Manage Contractors" HorizontalAlignment="Left" Margin="11,17,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Height="39" />
-        <TextBox x:Name="FirstNameTextBox" Text="First name" HorizontalAlignment="Left" Margin="11,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" TextChanged="FirstNameTextBox_TextChanged" />
+
+        <TextBox x:Name="FirstNameTextBox" Text="First name" HorizontalAlignment="Left" Margin="11,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
         <TextBox x:Name="LastNameTextBox" Text="Last name" HorizontalAlignment="Left" Margin="11,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
         <TextBox x:Name="HourlyWageTextBox" Text="Hourly wage" HorizontalAlignment="Left" Margin="11,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
 
-        <Button x:Name="AddContractorButton" Content="Add" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" Click="AddContractorButton_Click" />
-        <Button x:Name="RemoveContractorButton" Content="Remove" HorizontalAlignment="Left" Margin="11,217,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
+        <Button x:Name="AddContractorButton" Click="AddContractorButton_Click" Content="Add" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="20" />
+        <Button x:Name="RemoveContractorButton" Click="RemoveContractorButton_Click" Content="Remove" HorizontalAlignment="Left" Margin="11,217,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="20" />
 
         <Button x:Name="SearchContractorButton" Content="Search" HorizontalAlignment="Left" Margin="125,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
 
-        <ListBox x:Name="ContractorsListBox" Margin="10,289,405,10" FontSize="15" />
+        <ListBox x:Name="ContractorsListBox" Margin="11,289,417,10" FontSize="15" />
 
 
+        <!-- Manage Jobs -->
+        <Label Content="Manage Jobs" HorizontalAlignment="Left" Margin="418,17,0,0" VerticalAlignment="Top" Width="218" Height="39" FontSize="20" />
+
+        <TextBox x:Name="JobTitleTextBox" Text="Job Title" HorizontalAlignment="Left" Margin="418,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
+        <TextBox x:Name="JobCostTextBox" Text="Cost" HorizontalAlignment="Left" Margin="418,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="30" FontSize="15" />
+
+        <Button x:Name="AddJobButton" Click="AddJobButton_Click" Content="Add"  HorizontalAlignment="Left" Margin="418,139,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
+
+
+
+        <CheckBox x:Name="CompletedCheckBox" Content="Completed" HorizontalAlignment="Left" Margin="558,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.609,0.4" />
+
+        <Label Content="Select a contractor and job to assign them&#xD;&#xA;or mark it as complete." HorizontalAlignment="Left" Margin="418,217,0,0" VerticalAlignment="Top" Width="291" Height="51" FontSize="15" RenderTransformOrigin="0.482,0.484" />
+        <Button x:Name="AssignJobButton" Content="Assign" HorizontalAlignment="Left" Margin="418,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" Click="AssignJobButton_Click" />
+
+
+        <ListBox x:Name="JobsListBox" Margin="418,289,10,10" FontSize="20" />
 
     </Grid>
 </Window>
