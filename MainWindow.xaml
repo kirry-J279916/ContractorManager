@@ -17,7 +17,7 @@
         <Button x:Name="AddContractorButton" Click="AddContractorButton_Click" Content="Add" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="20" />
         <Button x:Name="RemoveContractorButton" Click="RemoveContractorButton_Click" Content="Remove" HorizontalAlignment="Left" Margin="11,217,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="20" />
 
-        <Button x:Name="SearchContractorButton" Content="Search" HorizontalAlignment="Left" Margin="125,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="104" />
+        <Button x:Name="GetContractorButton" Content="Get Contractors" HorizontalAlignment="Left" Margin="125,177,0,0" VerticalAlignment="Top" FontSize="20" Height="30" Width="155" Click="GetContractorButton_Click" />
 
         <ListBox x:Name="ContractorsListBox" Margin="11,289,417,10" FontSize="15" />
 

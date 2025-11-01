@@ -120,8 +120,30 @@ namespace ContractorManager
             // -- Call method to assign Contractor to Job.
             Recruitment.AssignJob(selectedContractor, selectedJob);
 
-
         }
 
+        private void GetContractorButton_Click(object sender, RoutedEventArgs e)
+        {
+            //string ContractorsString = Recruitment.GetContractors();
+            //Recruitment.GetContractors();
+
+            // -- Show in list box.
+            //JobsListBox.Items.Add(ContractorsString);
+
+
+            //ContractorsListBox.Items.Add(Recruitment.GetContractors());
+
+
+            //ContractorsListBox.Items.Clear();
+
+            List<Contractor> ContractorsList = Recruitment.GetContractors();
+
+            foreach (Contractor contractor in ContractorsList)
+            {
+                ContractorsListBox.Items.Add(contractor);
+            }
+
+            //MessageBox.Show($"{Recruitment.GetContractors}");
+        }
     }
 }

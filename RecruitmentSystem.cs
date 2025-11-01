@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,16 +10,16 @@ namespace ContractorManager
     internal class RecruitmentSystem
     {
         // -- Properties
-        public List<Contractor> Contractors { get; set; }
-        public List<Job> Jobs { get; set; }
+        public List<Contractor> ContractorsList { get; set; }
+        public List<Job> JobsList { get; set; }
 
 
         // -- Constructor
         public RecruitmentSystem()
         {
             // Set new lists for contractors and jobs.
-            Contractors = new List<Contractor>();
-            Jobs = new List<Job>();
+            ContractorsList = new List<Contractor>();
+            JobsList = new List<Job>();
         }
 
 
@@ -26,13 +27,13 @@ namespace ContractorManager
         // -- Method to add a Contractor to the Contractors list.
         public void AddContractor(Contractor contractor)
         {
-            Contractors.Add(contractor);
+            ContractorsList.Add(contractor);
         }
 
         // -- Method to remove a Contractor from the Contractors list.
         public void RemoveContractor(Contractor contractor)
         {
-            Contractors.Remove(contractor);
+            ContractorsList.Remove(contractor);
         }
 
 
@@ -40,7 +41,7 @@ namespace ContractorManager
         // -- Method to add a Job to the Job list.
         public void AddJob(Job job)
         {
-            Jobs.Add(job);
+            JobsList.Add(job);
         }
 
 
@@ -50,6 +51,38 @@ namespace ContractorManager
         {
             job.ContractorAssigned = contractor;
         }
+
+
+
+        // -- Method to mark Job as completed.
+
+
+
+
+        // -- Method to get all Contractors.
+        public List<Contractor> GetContractors()
+        {
+            return ContractorsList;
+        }
+
+
+
+        // -- Method to get all Jobs.
+
+
+
+
+        // -- Method to get only available Contractors.
+
+
+
+
+        // -- Method to filter and get only unassigned Jobs.
+
+
+
+
+        // -- Method to filter and get Jobs by cost.
 
 
 
